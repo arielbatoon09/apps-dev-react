@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cmp-button {
+  background: #3F7BF2;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 14px 24px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cmp-button:hover {
+  background: #5188F5;
+}
+
+.center-ui {
+  height: 100vh;
+  background: #F0F3F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmp-profile {
+  width: 400px;
+  background: white;
+  border: 1px solid #C6C7CC;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cmp-profile_header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cmp-profile_header h1 {
+  font-size: 24px;
+  color: #1D1E1F;
+}
+
+.cmp-profile_header p {
+  color: #5188F5;
+}
+
+.cmp-profile_description {
+  font-size: 16px;
+  color: #47494A;
+}
