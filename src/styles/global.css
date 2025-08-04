@@ -47,6 +47,13 @@ html, body {
   gap: 6px;
 }
 
+.cmp-profile_header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
 .cmp-profile_header h1 {
   font-size: 24px;
   color: #1D1E1F;

@@ -1,13 +1,25 @@
 import Button from "./Button";
 
 function Profile() {
+  const person = {
+    name: "Zayn Malik",
+    role: "Artist",
+    avatar: "/zayn.jpg",
+    description: "Zayn Malik, born Zain Javadd Malik on January 12, 1993, is an English singer and songwriter. He rose to fame as a member of the boy band One Direction, formed on The X Factor in 2010. He later embarked on a successful solo career, adopting the mononym Zayn.",
+  };
+
   return (
     <div className="cmp-profile">
       <div className="cmp-profile_header">
-        <h1>Ariel Batoon</h1>
-        <p>Software Developer</p>
+        <img
+          className="avatar"
+          src={person.avatar}
+          alt={person.name}
+        />
+        <h1>{person.name}</h1>
+        <p>{person.role}</p>
       </div>
-      <p className="cmp-profile_description">Hi there, I'm Ariel. I'm a Software Developer passionate on developing high-performance applications that seamlessly bridge web and mobile experiences.</p>
+      <p className="cmp-profile_description">{person.description}</p>
       <Button />
     </div>
   )
