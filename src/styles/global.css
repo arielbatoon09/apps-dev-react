@@ -60,3 +60,10 @@ html, body {
   font-size: 16px;
   color: #47494A;
 }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
