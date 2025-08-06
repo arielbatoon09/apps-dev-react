@@ -1,6 +1,13 @@
-function Button() {
+function Button(props) {
   return (
-    <button className="cmp-button">Get To Know</button>
+    <button className="cmp-button">{ props.label }</button>
+  )
+}
+
+// For Reference Only
+function Button2({ label }) {
+  return (
+    <button className="cmp-button">{ label }</button>
   )
 }
 
