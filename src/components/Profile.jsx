@@ -1,31 +1,26 @@
 import Button from "./Button";
 
-function Profile() {
-  const person = {
-    name: "Boss Malupiton",
-    avatar: "/arayko.jpeg",
-    role: "Content Creator",
-    description: "Joel Ravanera <b>(Boss)</b>, or known online as Malupiton, is a Filipino social media personality and entertainer. He known for his witty and relatable content in online platforms such as Facebook, TikTok, and YouTube.",
-  };
-
+function Profile({ personData }) {
   return (
     <div className="cmp-profile">
       <div className="cmp-profile_header">
         <img
           className="avatar"
-          src={person.avatar}
-          alt={person.name}
+          src={personData.avatar}
+          alt={personData.name}
         />
-        <h1>{person.name}</h1>
-        <p>{person.role}</p>
+        <h1>{personData.name}</h1>
+        <p>{personData.role}</p>
       </div>
 
       {/* If returns a vaue with a pure string */}
-      <p>{person.description}</p>
+      <p className="cmp-profile_description">{personData.description}</p>
 
       {/* If returns a value with a string */}
-      <p className="cmp-profile_description" dangerouslySetInnerHTML={{ __html: person.description }} />
-      <Button />
+      {/* <p dangerouslySetInnerHTML={{ __html: personData.description }} /> */}
+      
+      <Button buttonLabel={personData.buttonLabel} />
+
     </div>
   )
 }
