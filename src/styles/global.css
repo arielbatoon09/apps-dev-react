@@ -28,6 +28,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .cmp-profile {
@@ -59,4 +60,13 @@ html, body {
 .cmp-profile_description {
   font-size: 16px;
   color: #47494A;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  object-position: top;
 }

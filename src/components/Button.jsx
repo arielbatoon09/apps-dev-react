@@ -1,6 +1,8 @@
-function Button() {
+function Button({ text, color }) {
   return (
-    <button className="cmp-button">Get To Know</button>
+    <button className="cmp-button" style={{ background: color }}>
+      {text}
+    </button>
   )
 }
 
