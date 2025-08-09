@@ -1,14 +1,20 @@
 import Button from "./Button";
 
-function Profile() {
+function Profile({ personData }) {
   return (
     <div className="cmp-profile">
       <div className="cmp-profile_header">
-        <h1>Ariel Batoon</h1>
-        <p>Software Developer</p>
+        <img
+          className="avatar"
+          src={personData.imgSrc}
+          alt={personData.name}
+        />
+        <h1>{personData.name}</h1>
+        <p>{personData.role}</p>
       </div>
-      <p className="cmp-profile_description">Hi there, I'm Ariel. I'm a Software Developer passionate on developing high-performance applications that seamlessly bridge web and mobile experiences.</p>
-      <Button />
+      <p className="cmp-profile_description">{personData.description}</p>
+
+      <Button buttonLabel={personData.buttonLabel} color={personData.buttonColor} />
     </div>
   )
 }

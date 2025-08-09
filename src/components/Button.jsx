@@ -1,6 +1,8 @@
-function Button() {
+function Button(props) {
   return (
-    <button className="cmp-button">Get To Know</button>
+    <button className="cmp-button" style={{ background: props.color }}>
+      {props.buttonLabel}
+    </button>
   )
 }
 
